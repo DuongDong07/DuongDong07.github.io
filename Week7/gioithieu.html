@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Giới thiệu - Flower Shop</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; }
+        #header {
+            background: #f4f4f4 url(images/header.jpg) no-repeat center;
+            height: 181px;
+            width: 900px;
+            margin: 0 auto; 
+        }
+        #logo { padding: 20px 0 0 50px; }
+        #menu_top {
+            margin-top: 55px;
+            margin-left: 30px;
+            background: #ffffff;
+            height: 40px;
+            opacity: 0.9;
+            border-radius: 10px 0px 0px 10px;
+        }
+        .level1 { list-style-type: none; padding-top: 12px; margin: 0; }
+        .level1 li { display: inline; float: left; padding: 0px 20px 0px 20px; font-weight: bold; position: relative; }
+        .level1 li a { color: red; text-decoration: none; }
+        .level1 li a:hover { color: green; }
+
+        .level2 { display: none; position: absolute; top: 28px; left: 0; width: 150px; background: #ccc; list-style: none; padding: 0; z-index: 100; }
+        .level1 li:hover > .level2 { display: block; }
+        .level2 li { float: none; padding: 10px; border-bottom: 1px solid #fff; }
+        .level2 li:hover { background: #CC0; }
+
+        #content {
+            width: 860px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ddd;
+        }
+        .intro-title { color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 10px; }
+        .intro-img { float: left; margin-right: 20px; border: 1px solid #ccc; padding: 5px; }
+        .footer { text-align: center; font-size: 12px; color: #666; margin-top: 20px; padding: 10px; }
+    </style>
+</head>
+<body>
+
+    <header id="header">
+        <div id="logo">
+            <img src="images/logo.gif" width="191" height="66" alt="Flower Shop" />
+        </div>
+        <nav id="menu_top">
+            <ul class="level1">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gioithieu.html">Introduction</a></li>
+                <li>
+                    <a href="#">Flower Category</a>
+                    <ul class="level2">
+                        <li>Sun Flower</li>
+                        <li>Rose Flower</li>
+                        <li>Lily Flower</li>
+                        <li>Tulips Flower</li>
+                    </ul>
+                </li>
+                <li><a href="dangky.html">Register</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="lienhe.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="content">
+        <h2 class="intro-title">Về Flower Shop</h2>
+        
+        <p>Chào mừng bạn đến với <strong>Flower Shop</strong>, nơi kết nối yêu thương thông qua những đóa hoa tươi thắm nhất. Chúng tôi tự hào là đơn vị cung cấp hoa tươi uy tín với hơn 10 năm kinh nghiệm trong ngành hoa nghệ thuật.</p>
+
+        <h3>Sứ mệnh của chúng tôi</h3>
+        <p>Mang đến niềm vui và sự an ủi thông qua những bó hoa được thiết kế riêng biệt, phù hợp với mọi dịp lễ như sinh nhật, đám cưới, hay những ngày kỷ niệm đặc biệt.</p>
+
+        <h3>Tại sao chọn Flower Shop?</h3>
+        <ul>
+            <li>Hoa tươi nhập mới mỗi ngày.</li>
+            <li>Giao hàng nhanh chóng trong vòng 2 giờ.</li>
+            <li>Đội ngũ nghệ nhân cắm hoa chuyên nghiệp.</li>
+            <li>Giá cả hợp lý và nhiều ưu đãi hấp dẫn.</li>
+        </ul>
+
+        <div style="clear: both;"></div>
+    </main>
+
+    <footer class="footer">
+        &copy; 2026 Flower Shop - Tất cả quyền được bảo lưu.
+    </footer>
+
+</body>
+</html>
